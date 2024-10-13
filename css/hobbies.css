@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afacad Flux';
+}
+
+header.static {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+.static{
+    background-color:rgba(165, 61, 255, 1);
+}
+
+
+.topnav a:hover {
+    color:rgba(19, 34, 56, 1);
+}
+
+.topnav a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+.box img{
+    width: 312px;
+    height: 200px;
+    background-size: cover;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.box-wrapper{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+ 
+}
+.box{
+    width: 312px;
+    height: 350px;
+    display: flex;
+    background-size: contain;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 30px;
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+    
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.box-4{
+    display: flex;
+    justify-content: flex-start;
+}
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 200px;
+}
+.text-wrapper p{
+    font-size: 20px;
+    color: rgba(85, 96, 112, 1);
+}
+.text-wrapper h1{
+    font-size: 48px;
+}
+.box h1{
+    color:white;
+    margin-top: 10px;
+}
+.box p{
+    color: white;
+    margin-top: 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+    .box-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+
+     
+    }
+  }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    .box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Corrected here */
+        gap: 20px;
+    }
+}
+.section{
+    margin-bottom: 300px;
+}
+@media screen and (max-width:600px){
+    .topnav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+   
+    .nav-wrapper{
+        height: auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    a{
+        display: block;
+        flex: 1 1 auto;
+    }
+}

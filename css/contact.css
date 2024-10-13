@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afacad Flux';
+}
+
+header.static {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+.static{
+    background-color:rgba(165, 61, 255, 1);
+}
+
+
+.topnav a:hover {
+    color:rgba(19, 34, 56, 1);
+}
+
+.topnav a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+
+.section-links{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    padding: 20px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-left img{
+    width: 500px;
+    
+}
+.section{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+ 
+
+}
+.section-wrapper{
+    display: flex;
+    justify-content:center;
+    width:80%;
+    flex-wrap: wrap;
+
+}
+.section-right{
+    background-color:rgba(165, 61, 255, 1);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    padding-top: 50px;
+
+}
+.section-right h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+form label{
+    font-size: 20px;
+    font-family: 'Afacad Flux';
+    text-align: center;
+    color: white;
+    margin: 10 0px;
+}
+form input{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.section-right button{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid blueviolet;
+    margin-top: 30px;
+}
+.link-t{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+@media(max-width:620px){
+    .section-left img{
+        width: 100%;
+    }
+    form input{
+        width: 100%;
+       
+    }
+    .section-right button{
+        width: 100%;
+    }
+    .section-right{
+        padding-bottom: 50px;
+    }
+}
+@media (max-width:1300px) {
+    .section-right{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width:650px){
+    .topnav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+   
+    .nav-wrapper{
+        height: auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    a{
+        display: block;
+        flex: 1 1 auto;
+    }
+}
